@@ -1,5 +1,6 @@
 let budgetValue = 0
 let totalExpensesValue = 0
+let balanceColor = "green"
 const  expenseEntries = [
     ["groceries", 33],
     ["restaurants", 50],
