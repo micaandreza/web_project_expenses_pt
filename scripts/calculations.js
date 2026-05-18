@@ -12,11 +12,10 @@ const  expenseEntries = [
 ];
 for ( let expense of expenseEntries ) {
     totalExpensesValue += expense[1];
-    console.log("Despesas totais:" + totalExpensesValue)
-
 }
+
 function calculateAverageExpense(){
-    if (expenseEntries === 0){
+    if (expenseEntries.length === 0){
     return 0;     }
 let total = 0; 
 for(let i = 0; i < expenseEntries.length; i++ ){
@@ -66,6 +65,8 @@ function calculateLargestCategory() {
 }
 
 function addExpenseEntry(newEntry){
+    if (newEntry[1] >= 0 ){
  expenseEntries.push(newEntry);
  totalExpensesValue += newEntry[1];
+    }
 }
